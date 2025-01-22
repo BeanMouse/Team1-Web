@@ -15,6 +15,7 @@ interface InputProps {
 const InputStyle = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
 `;
 
 const InputWrapStyle = styled.div`
