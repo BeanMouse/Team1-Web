@@ -10,6 +10,7 @@ const WrapperStyle = styled.div`
   flex-direction: column;
   gap: 10px;
   justify-content: center;
+  align-items: center;
   width: 100%;
 `;
 const MainContainerStyle = styled.div`

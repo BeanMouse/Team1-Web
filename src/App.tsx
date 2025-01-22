@@ -3,6 +3,7 @@ import HomePage from "./components/pages/Homepage.tsx";
 import NavBar from "./components/nav/NavBar.tsx";
 import GlobalStyle from "./components/style/GlobalStyle.tsx";
 import LoginPage from "./components/pages/LoginPage.tsx";
+import JoinPage from "./components/pages/JoinPage.tsx";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
+          <Route path="/" element={<JoinPage />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
         </Routes>
