@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./components/pages/Homepage.tsx";
 import NavBar from "./components/nav/NavBar.tsx";
 import GlobalStyle from "./components/style/GlobalStyle.tsx";
+import LoginPage from "./components/pages/LoginPage.tsx";
 
 function App() {
   return (
@@ -10,8 +11,8 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/login" element={<LoginPage />} />
         </Routes>
       </BrowserRouter>
     </div>
