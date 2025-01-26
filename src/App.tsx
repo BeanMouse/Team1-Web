@@ -4,6 +4,8 @@ import NavBar from "./components/nav/NavBar.tsx";
 import GlobalStyle from "./components/style/GlobalStyle.tsx";
 import LoginPage from "./components/pages/LoginPage.tsx";
 import JoinPage from "./components/pages/JoinPage.tsx";
+import LoginPage from "./components/pages/LoginPage.tsx";
+import JoinPage from "./components/pages/JoinPage.tsx";
 
 function App() {
   return (
