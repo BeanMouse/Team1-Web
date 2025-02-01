@@ -24,12 +24,14 @@ export const handleLogin = async (
       const data = await response.json();
       console.log("로그인 성공:", data);
 
-      if (data.accessToken) {
+      if (data.accessToken && data.refreshToken) {
         sessionStorage.setItem("accessToken", data.accessToken);
+        sessionStorage.setItem("refreshToken", data.refreshToken);
         console.log(`Token 저장 : ${data.accessToken}`);
+        console.log(`Token 저장 : ${data.refreshToken}`);
         navigate("/home");
       } else {
-        console.error("서버로부터 AccessToken을 발급받지 못했습니다.");
+        console.error("서버로부터 토큰을 발급받지 못했습니다.");
       }
     } else {
       console.error("로그인 실패");
